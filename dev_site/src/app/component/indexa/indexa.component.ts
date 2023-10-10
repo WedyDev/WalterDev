@@ -35,4 +35,17 @@ export class IndexaComponent implements OnInit {
       this.textColor = "black";
     }
   }
+
+  downloadPdf() {
+    // URL del archivo PDF
+    const pdfUrl = 'assets/pdf/CV_Delgado_Walter.pdf';
+
+    // Crea un elemento 'a' para el enlace de descarga
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'WalterDelgadoCV.pdf'; // Nombre que tendrá el archivo descargado
+
+    // Simula un clic en el enlace para iniciar la descarga
+    link.click();
+  }
 }

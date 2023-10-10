@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { IndexaComponent } from './component/indexa/indexa.component';
 import { ToolbarMostrarComponent } from './component/toolbar/toolbar-mostrar/toolbar-mostrar.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { FooterMostrarComponent } from './component/footer/footer-mostrar/footer-mostrar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ToolbarMostrarComponent } from './component/toolbar/toolbar-mostrar/too
     ToolbarComponent,
     IndexaComponent,
     ToolbarMostrarComponent,
+    FooterComponent,
+    FooterMostrarComponent,
   ],
   imports: [
     BrowserModule,
