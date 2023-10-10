@@ -1,0 +1,11 @@
+/* Media query para pantallas de 970px o menos */
+@media (max-width: 970px) {
+  .navbar-nav {
+    text-align: center; /* Alineación central para .navbarSupportedContent */
+  }
+
+  /* Alineación central para los elementos .navbar-nav y .brand */
+  .navbar-nav {
+    text-align: center;
+  }
+}

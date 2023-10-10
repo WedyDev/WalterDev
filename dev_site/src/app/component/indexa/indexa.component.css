@@ -1,0 +1,136 @@
+/* Establece un fondo con gradiente de azul a azul metálico */
+.Frame1 {
+  /*background: linear-gradient(to bottom, #02447d, #034f6d); /* Cambia los colores según tus preferencias */
+  background-image: url("/assets/img/Banner1.jpg"); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+
+  margin: 0; /* Elimina el margen predeterminado para el cuerpo de la página */
+  padding: 0; /* Elimina el relleno predeterminado para el cuerpo de la página */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Añade flex-direction para colocar elementos verticalmente */
+  height: 100vh; /* Ajusta la altura según tus preferencias */
+  text-align: center;
+  background-color: #0074D9; /* Color de fondo, puedes cambiarlo */
+  color: white; /* Color de texto, puedes cambiarlo */
+}
+/* Establece un fondo con gradiente de azul a azul metálico */
+.Frame2 {
+  background: linear-gradient(to bottom, #2a3036, #9aadb2); /* Cambia los colores según tus preferencias */
+  height: 100vh; /* Ajusta la altura según tus preferencias */
+
+  margin: 0 auto;
+  display:block;
+  overflow:auto;
+  /*overflow: hidden;*/
+}
+/* Establece un fondo con gradiente de azul a azul metálico */
+.Frame3 {
+  background: linear-gradient(to bottom, #0074D9, #7FDBFF); /* Cambia los colores según tus preferencias */
+  height: 100vh; /* Establece la altura al 100% del viewport */
+  margin: 0; /* Elimina el margen predeterminado para el cuerpo de la página */
+  padding: 0; /* Elimina el relleno predeterminado para el cuerpo de la página */
+}
+/* Establece un fondo con gradiente de azul a azul metálico */
+.Frame4 {
+  background: linear-gradient(to bottom, #0074D9, #7FDBFF); /* Cambia los colores según tus preferencias */
+  height: 100vh; /* Establece la altura al 100% del viewport */
+  margin: 0; /* Elimina el margen predeterminado para el cuerpo de la página */
+  padding: 0; /* Elimina el relleno predeterminado para el cuerpo de la página */
+}
+.Frame5 {
+  background: linear-gradient(to bottom, #0074D9, #7FDBFF); /* Cambia los colores según tus preferencias */
+  height: 100vh; /* Establece la altura al 100% del viewport */
+  margin: 0; /* Elimina el margen predeterminado para el cuerpo de la página */
+  padding: 0; /* Elimina el relleno predeterminado para el cuerpo de la página */
+}
+
+.item2{
+  z-index: 10;
+}
+/* Estilos CSS para la imagen ovalada */
+.oval-image {
+  width: 185px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 200px; /* Autoajusta la altura */
+  border-radius: 50%; /* Aplica un radio de borde para hacer la imagen ovalada */
+  display: block; /* Hace que la imagen sea un elemento en bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente dentro de item1 */
+
+  /* Ajusta la posición de la imagen para pantallas más grandes (992px) */
+  @media (min-width: 992px) {
+    float: right; /* Alinea la imagen a la derecha en col-xl-6, col-lg-6, col-md-6 */
+    margin-right: 25px; /* Añade un margen derecho para separar la imagen del texto */
+    transform: translateX(180px);
+  }
+  /* Ajusta la posición de la imagen para pantallas más grandes (1200px) */
+  @media (min-width: 1200px) {
+    float: right; /* Alinea la imagen a la derecha en col-xl-6, col-lg-6, col-md-6 */
+    margin-right: 25px; /* Añade un margen derecho para separar la imagen del texto */
+    transform: translateX(255px);
+  }
+  /* Ajusta la posición de la imagen para pantallas más grandes (1400px) */
+  @media (min-width: 1400px) {
+    float: right; /* Alinea la imagen a la derecha en col-xl-6, col-lg-6, col-md-6 */
+    margin-right: 25px; /* Añade un margen derecho para separar la imagen del texto */
+    transform: translateX(320px);
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(12px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.pixelated-text {
+  font-size: 44px; /* Tamaño de fuente */
+  font-weight: bold;
+  color: #5c5f8e; /* Color del texto */
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px rgb(102, 102, 144), 4px 4px 0px rgb(174, 238, 174), 6px 6px 0px rgb(172, 125, 125);
+}
+.iniciar{
+  height: 100vh; /* Ajusta la altura según tus preferencias */
+}
+.item3 {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  text-align: start;
+}
+.item4{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.item3 h1,
+.item3 h2,
+.item3 p {
+  margin: 10px; /* Agrega margen alrededor de los elementos de texto */
+}
+
+
+.crdImg {
+  width: 100px; /* Establece el ancho deseado */
+  height: 100px; /* Establece la altura deseada */
+}
+
+.imgst{
+  margin-top: 10px;
+}
