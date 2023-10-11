@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wedy Dev</title>
+
+  <script>
+    function applyBlur(img) {
+      img.style.filter = "blur(4px)";
+      img.removeEventListener("click", applyBlur);
+    }
+    </script>
+
 </head>
 <body>
     <header>
@@ -32,55 +40,91 @@
     <section class="Frame2" id="About">
       <div class="container text-center">
         <div class="row iniciar">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12 item3">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-5 item3">
             <h1>About me</h1>
             <h2>I'm Walter Delgado, Full Stack Developer</h2>
             <p>I'm a student of Information Systems Engineering at the Peruvian University of Applied Sciences. Currently, I'm focused on Full Stack development, working with various technologies.</p>
           </div>
-          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mb-12 item4">
+          <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-5 item4">
             <h2>My skills</h2>
               <div class="row imgst">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mb-12 ">
-                  <img class="crdImg" src="assets/img/Html.png">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-12 image-container">
+                    <img class="crdImg"  src="assets/img/Html.png">
+                    <div class="image-overlay">
+                      HTML
+                    </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-12 image-container">
                   <img class="crdImg" src="assets/img/Css.png">
+                  <div class="image-overlay">
+                    css
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12 image-container" >
                   <img class="crdImg"src="assets/img/JavaScript.png">
+                  <div class="image-overlay">
+                    JAVASCRIPT
+                  </div>
                 </div>
               </div>
               <div class="row imgst">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-12 image-container">
                   <img class="crdImg"src="assets/img/GitHub.png">
+                  <div class="image-overlay">
+                    GITHUB
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-12 image-container">
                   <img class="crdImg"src="assets/img/Cm.png">
+                  <div class="image-overlay">
+                    C++
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12 image-container">
                   <img class="crdImg"src="assets/img/Cs.png">
+                  <div class="image-overlay">
+                    C#
+                  </div>
                 </div>
               </div>
               <div class="row imgst">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-12 image-container">
                   <img class="crdImg"src="assets/img/Ms Sql.png">
+                  <div class="image-overlay">
+                    MS SQL
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-12 image-container">
                   <img class="crdImg"src="assets/img/Pst SQL.png">
+                  <div class="image-overlay">
+                    PostGres
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-12 image-container">
                   <img class="crdImg"src="assets/img/Angular.png">
+                  <div class="image-overlay">
+                    Angular
+                  </div>
                 </div>
               </div>
               <div class="row imgst">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 ">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 image-container">
                   <img class="crdImg"src="assets/img/Spring.png">
+                  <div class="image-overlay">
+                    Spring
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 ">
-                  <img class="crdImg" src="assets/img/Vue.png">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 image-container">
+                  <img class="crdImg" style=" filter: blur(4px); " src="assets/img/Vue.png">
+                  <div class="image-overlay">
+                    Soon
+                  </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
-                  <img class="crdImg"src="assets/img/react.png">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 image-container">
+                  <img class="crdImg" style=" filter: blur(4px); " src="assets/img/react.png">
+                  <div class="image-overlay">
+                    Soon
+                  </div>
                 </div>
               </div>
           </div>
@@ -95,7 +139,7 @@
     <section class="Frame4" id="Portafolio">
       <div class="container text-center">
         <div class="row iniciar">
-          <div class="col item3">
+          <div class="col mt-5 item3">
             <h1>Portafolio</h1>
             <h3>My projects completed using different technologies</h3>
           </div>
@@ -127,18 +171,31 @@
     <section class="Frame5" id="Contact">
       <div class="container text-center">
         <div class="row iniciar">
-          <div class="col item3">
+          <div class="col mt-5 item3">
             <h1>Contact</h1>
           </div>
             <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 image-portafolio" >
+                <a href="https://www.linkedin.com/in/walter-delgadoy/" target="_blank">
+                <img class="crdImg" style="border-radius: 55%;" src="assets/img/lnkdn.jpg">
+                <br>
                 <a>Linkdn</a>
+                </a>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 image-portafolio ">
+                <a href="https://github.com/WedyDev" target="_blank">
+                <img class="crdImg" src="assets/img/GitHub.png">
+                <br>
                 <a>GitHub</a>
+              </a>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 ">
-                <a>Gmail</a>
+              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 image-portafolio">
+                <a href="https://github.com/WedyDev" target="_blank">
+                  <img class="crdImg" src="assets/img/gmail.jpg">
+                <br>
+                <a href="mailto:wdelgado4202@gmail.com?subject=Interesados%20en%20contar%20con%20tus%20servicios&body=Estamos%20interesados%20en%20contar%20con%20tus%20servicios%20c%C3%B3mo%20desarrollador">Gmail</a>
+              </a>
+
               </div>
             </div>
             <div class="row">
@@ -149,13 +206,10 @@
             </div>
         </div>
       </div>
-      <app-footer></app-footer>
-
     </section>
 
     <footer>
-
-
+      <app-footer></app-footer>
     </footer>
 </body>
 </html>

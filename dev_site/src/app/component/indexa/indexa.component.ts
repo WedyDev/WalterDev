@@ -48,4 +48,11 @@ export class IndexaComponent implements OnInit {
     // Simula un clic en el enlace para iniciar la descarga
     link.click();
   }
+  applyBlur(event: Event) {
+    const target = event.target as HTMLImageElement;
+    target.style.filter = "blur(4px)";
+    target.removeEventListener("click", this.applyBlur);
+  }
+
+
 }

@@ -1,5 +1,5 @@
 /* Media query para pantallas de 970px o menos */
-@media (max-width: 970px) {
+@media (max-width: 992px) {
   .navbar-nav {
     text-align: center; /* Alineación central para .navbarSupportedContent */
   }
@@ -8,4 +8,14 @@
   .navbar-nav {
     text-align: center;
   }
+
+.navbar-expand-lg{
+  backdrop-filter: blur(10px); /* Ajusta el valor de desenfoque según tus preferencias */
+  background-color: rgba(18, 18, 18, 0.1);
 }
+}
+
+.nav-link:hover{
+  color: rgb(156, 144, 133);
+}
+
