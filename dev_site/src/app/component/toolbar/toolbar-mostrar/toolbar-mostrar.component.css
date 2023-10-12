@@ -12,6 +12,10 @@
 .navbar-expand-lg{
   backdrop-filter: blur(10px); /* Ajusta el valor de desenfoque según tus preferencias */
   background-color: rgba(18, 18, 18, 0.1);
+
+  @media (max-width: 332px) {
+    display: none;
+    }
 }
 }
 

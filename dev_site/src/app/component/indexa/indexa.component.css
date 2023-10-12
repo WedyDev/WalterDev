@@ -1,3 +1,32 @@
+.Protector
+{
+@media (max-width: 332px) {
+
+  .Frame1{
+    display: none;
+  }
+  .Frame2{
+    display: none;
+
+  }
+  .Frame3{display: none;
+
+  }
+    .Frame4{display: none;
+
+    }
+      .Frame5{display: none;
+
+      }
+
+
+}
+
+}
+
+
+
+
 .Frame1 {
   /*background: linear-gradient(to bottom, #02447d, #034f6d); /* Cambia los colores según tus preferencias */
   background-image: url("/assets/img/Banner1.jpg"); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
@@ -14,8 +43,9 @@
   flex-direction: column;
   height: 100vh;
   text-align: center;
-  background-color: #0074D9;
   color: white;
+
+
 }
 .Frame2 {
   background: linear-gradient(to bottom, #2a3036, #9aadb2);
@@ -40,14 +70,32 @@
   /*overflow: hidden;*/
 }
 .Frame3 {
-  background: linear-gradient(to bottom, #0074D9, #7FDBFF);
+  background: linear-gradient(to bottom, #393939, #545656);
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 .Frame4 {
-  background: linear-gradient(to bottom, #0074D9, #7FDBFF);
-  height: 100vh;
+  background: linear-gradient(to bottom, #5e6060, #e7f0fa);
+  @media (min-width: 767px) {
+    height: 100%;
+    text-align:justify;
+
+   }
+  @media (min-width: 992px) {
+    height: 100%;
+    text-align:justify;
+
+   }
+  @media (min-width: 1200px) {
+    height: 100vh;
+  text-align:justify;
+  }
+  @media (min-width: 1400px) {
+    height: 100vh;
+    text-align:justify;
+
+  }
   margin: 0;
   padding: 0;
 }
@@ -101,9 +149,9 @@
 .pixelated-text {
   font-size: 44px;
   font-weight: bold;
-  color: #5c5f8e;
+  color: #9b9d9a;
   text-transform: uppercase;
-  text-shadow: 2px 2px 0px rgb(102, 102, 144), 4px 4px 0px rgb(174, 238, 174), 6px 6px 0px rgb(172, 125, 125);
+  text-shadow: 2px 2px 0px rgb(68, 68, 70), 4px 4px 0px rgb(247, 248, 247), 6px 6px 0px rgb(172, 125, 125);
 }
 .iniciar{
   @media (min-width: 992px) {
@@ -148,6 +196,7 @@
   height: 100px;
   display: block;
   transition: filter 0.5s;
+  margin-bottom: 12px;
 }
 
 .imgst{
@@ -204,7 +253,8 @@ a {
 
 /* Aplicar el desenfoque al pasar el mouse */
 .image-container:hover .crdImg {
-  filter: blur(3px);
+  filter: blur(8px);
+
 }
 
 /* Mostrar la superposición al pasar el mouse */
@@ -222,5 +272,122 @@ a {
   transition: opacity 0.5s;
 
 }
+.colorhvr{
+  font-size: 20px;
+  color: rgb(15, 14, 14);
+  font-style: italic;
+  font-weight: bold;
+}
+
+.colortxt{
+  color: white;
+}
+
+
+/*Carta volteadora*/
+.card {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  margin: 20px;
+
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility:hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(0, 0, 0);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+
+}
+
+.card .back .link {
+
+  border-top: solid 5px #949090;
+  height: 50px;
+  line-height: 50px;
+  border-color: #434242;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+
+}
+.card .back .link a:hover {
+  color: #f3f3f3;
+  padding: 5px 10px; /* 5px de alto y 10px de ancho (ajusta según tus necesidades) */
+  background-color: #2b3036; /* Color de fondo del botón */
+  border: none;
+  border-radius: 50px; /* Utilizamos un valor grande para hacer que el botón sea redondeado */
+  text-decoration: none; /* Quita la subraya de los enlaces */
+  color: white; /* Color del texto del botón */
+  font-weight: bold; /* Estilo de fuente en negrita */
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+
+}
+
+
+
+
 
 
