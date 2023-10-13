@@ -1,28 +1,35 @@
-.Protector
-{
-@media (max-width: 332px) {
 
-  .Frame1{
+@media (max-width: 319px) {
+  .Protector
+  {
+  display: none;
+  }
+  body{
+    height: 100vh;
+    background-image: url("/assets/img/Alerta.png"); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+    background-size:contain;
+    background-repeat:repeat;
+
+  }
+  .interface{
+    display: contents;
+    widht:100%;
+    height:100%
+  }
+  header{
     display: none;
+
   }
-  .Frame2{
+}
+@media (min-width: 319px) {
+  .interface{
     display: none;
+    background-color: red;
 
   }
-  .Frame3{display: none;
-
-  }
-    .Frame4{display: none;
-
-    }
-      .Frame5{display: none;
-
-      }
-
 
 }
 
-}
 
 
 
@@ -48,7 +55,7 @@
 
 }
 .Frame2 {
-  background: linear-gradient(to bottom, #2a3036, #9aadb2);
+  background: linear-gradient(to bottom, #5e6060, #e7f0fa);
 
   @media (min-width: 992px) {
     height: 100%;
@@ -70,13 +77,13 @@
   /*overflow: hidden;*/
 }
 .Frame3 {
-  background: linear-gradient(to bottom, #393939, #545656);
+  background: linear-gradient(to bottom, #5e6060, #e7f0fa);
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 .Frame4 {
-  background: linear-gradient(to bottom, #5e6060, #e7f0fa);
+  background: linear-gradient(to bottom, #b0b2b2, #ffffff);
   @media (min-width: 767px) {
     height: 100%;
     text-align:justify;
@@ -88,19 +95,20 @@
 
    }
   @media (min-width: 1200px) {
-    height: 100vh;
+    height: 100%;
   text-align:justify;
   }
   @media (min-width: 1400px) {
-    height: 100vh;
+    height: 100%;
     text-align:justify;
+    padding-bottom: 8%;
 
   }
   margin: 0;
   padding: 0;
 }
 .Frame5 {
-  background: linear-gradient(to bottom, #0074D9, #7FDBFF);
+  background: linear-gradient(to bottom, #5e6060, #e7f0fa);
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -280,7 +288,7 @@ a {
 }
 
 .colortxt{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 

@@ -2,6 +2,7 @@
 /*FOOTER*/
 .fab{
   font-size: 30px;
+  margin-top: 4px;
 }
 
 .fab:hover{
@@ -27,7 +28,7 @@
 
 
 .album{
-  @media (max-width: 332px) {
+  @media (max-width: 319px) {
     display: none;
     }
 }
@@ -38,3 +39,6 @@
     align-items: center;
   }
 }
+
+
+.album{}
